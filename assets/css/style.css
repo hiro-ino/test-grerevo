@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+} 
+
+a{
+  text-decoration: none;
+  color: green;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.example {
+  /* background-color: red; */
+  width: 70%;
+  height: 90%;
+}
+.example img {
+  /* width: 30%; */
+  height: auto;
+} 
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  /* background-color: red; */
+  align-items: center;
+  position: fixed;
+  background-color: white;
+}
+ 
+/* p {
+  padding: 130px 0px;
+  height: 500px;
+} */
+ 
+.title {
+  margin-right: auto;
+}
+ 
+.menu-item {
+  list-style: none;
+  display: inline-block;
+  padding: 3px;
+  text-decoration: none;
+}
+
+ .container {
+  background-color:white; 
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+}
+
+.container img{
+  width: 100%;
+  height: 80vh;
+} 
+
+footer{
+  background-color: white;
+  color: green;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+.lead{
+  width: 100%;
+  height: 50%;
+}
+
+#container {
+	max-width: 14030px;	/*ブロックの最大幅*/
+	margin: 0 auto;
+	padding:0 3% 10%;
+}
+
+#contents h2 {
+	clear: both;
+	margin-bottom: 20px;
+	color: #fff;		/*文字色*/
+	padding: 10px 20px 5px;
+	background: #80ad45;	/*背景色*/
+	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
+}
+/*コンテンツのh3タグの設定*/
+#contents h3 {
+	clear: both;
+	margin-bottom: 20px;
+	padding: 8px 20px;	/*上下、左右への余白*/
+	background: #fff;	/*背景色*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
+}
+
+
+/*コンテンツのp(段落)タグ設定*/
+#contents p {
+	padding: 0px 20px 60px;	/*上、左右、下への余白*/
+}
+/*他。微調整。*/
+#contents p + p {
+	margin-top: -5px;
+}
+#contents h2 + p,
+#contents h3 + p {
+	margin-top: -10px;
+}
+#contents main + main{
+	margin-top: 30px;
+}
+
+/*テーブル
+---------------------------------------------------------------------------*/
+/*テーブル１行目に入った見出し部分（※caption）*/
+.ta1 caption {
+	border: 1px solid #999;	/*テーブルの枠線の幅、線種、色*/
+	border-bottom: none;	/*下線だけ消す*/
+	text-align: left;		/*文字を左寄せ*/
+	background: #eee;		/*背景色*/
+	font-weight: bold;		/*太字に*/
+	padding: 10px;			/*ボックス内の余白*/
+}
+/*テーブル１行目に入った見出し部分（※tamidashi）*/
+.ta1 th.tamidashi {
+	width: auto;
+	text-align: left;	/*左よせ*/
+	background: #eee;	/*背景色*/
+}
+/*ta1テーブルブロック設定*/
+.ta1 {
+	table-layout: fixed;
+	width: 100%;
+	margin: 0 auto 20px;
+}
+.ta1, .ta1 td, .ta1 th {
+	word-break: break-all;
+	border: 1px solid #999;	/*テーブルの枠線の幅、線種、色*/
+	padding: 10px;			/*テーブル内の余白*/
+}
+/*テーブルの左側ボックス*/
+.ta1 th {
+	text-align: center;	/*センタリング*/
+	width: 30%;			/*幅*/
+}
