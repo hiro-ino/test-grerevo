@@ -152,3 +152,14 @@ footer{
 	text-align: center;	/*センタリング*/
 	width: 30%;			/*幅*/
 }
+
+th,td {
+  border: solid 1px;              /* 枠線指定 */
+  text-align: center;
+}
+
+table {
+  border-collapse:  collapse;     /* セルの線を重ねる */
+  width:  100%;               /* 幅指定 */
+  table-layout: fixed;        /* セルの幅計算指定 */
+}
