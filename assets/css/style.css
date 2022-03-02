@@ -36,10 +36,6 @@ header {
   background-color: white;
 }
  
-/* p {
-  padding: 130px 0px;
-  height: 500px;
-} */
  
 .title {
   margin-right: auto;
@@ -63,6 +59,21 @@ header {
   width: 100%;
   height: 80vh;
 } 
+
+.wrapper img{
+  width: 100%;
+  margin-bottom: 20px;
+} 
+
+.wrapper h2{
+  clear: both;
+	margin-bottom: 20px;
+	color: #fff;		/*文字色*/
+	padding: 10px 20px 5px;
+	background: #80ad45;	/*背景色*/
+	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
+  text-align: center;
+}
 
 footer{
   background-color: white;
@@ -155,7 +166,7 @@ footer{
 
 th,td {
   border: solid 1px;              /* 枠線指定 */
-  text-align: center;
+  text-align:left
 }
 
 table {
@@ -163,3 +174,53 @@ table {
   width:  100%;               /* 幅指定 */
   table-layout: fixed;        /* セルの幅計算指定 */
 }
+
+/* 横並び */
+
+.flex {
+  display: flex; /*横並び*/
+}
+.flex .image {
+  width: 640px; /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.flex .right {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+.flex .title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+.flex .text {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+/* 画像を天地中央表示 */
+
+.flex .image {
+  overflow: hidden;
+  position: relative;
+}
+.flex .image::before {
+  content: "";
+  display: block;
+  padding-top: 58%;
+}
+.flex .image img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
